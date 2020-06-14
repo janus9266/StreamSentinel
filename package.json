@@ -1,0 +1,15 @@
+{
+  "name": "streamrecorder",
+  "version": "1.0.0",
+  "description": "records any stream url using ffmpeg",
+  "main": "recorder.js",
+  "scripts": {
+    "test": "node recorder.js"
+  },
+  "bin": "recorder.js",
+  "author": "ammar@vmclouds.co.uk",
+  "license": "MIT",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
