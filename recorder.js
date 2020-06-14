@@ -43,7 +43,7 @@ function recordCam(c) {
 	
 	if (INTERRUPT)
 		return;
-		//return console.log('[*] Recording stopped for\x1b[36m Camera {{0}}\x1b[0m'.replace('{{0}}',c))
+		//return console.log('[*] Recording stopped for\x1b[36m Stream {{0}}\x1b[0m'.replace('{{0}}',c))
 	
 	//first verify the folder for the day exists
 	var dayDir = path.join(config.dir,getDayDate());
@@ -66,7 +66,7 @@ function recordCam(c) {
 		if (match && match.length >=2){
 			console.log('[+] Started recording of \x1b[36mStream {{0}}\x1b[0m to\x1b[31m {{1}}\x1b[0m (file {{2}})'.replace('{{0}}',c).replace('{{1}}',match[1]).replace('{{2}}',++iteration));
 			if (iteration >= config.iterations  && config.iterations != 0){
-				console.log('[+] All iterations completed for \x1b[36mCamera {{0}}\x1b[0m'.replace('{{0}}',c))
+				console.log('[+] All iterations completed for \x1b[36mStream {{0}}\x1b[0m'.replace('{{0}}',c))
 				proc.kill();																											   
 				return;
 			}
