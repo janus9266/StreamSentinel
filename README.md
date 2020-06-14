@@ -14,7 +14,7 @@ For the script to run, ffmpeg must be installed and in path. See https://www.ffm
 
 	git clone https://github.com/0x41mmarVM/StreamSentinel
 	npm install
-	node recorder.js`
+	node recorder.js
 
 ## Config
 
