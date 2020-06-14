@@ -60,7 +60,7 @@ function recordCam(c) {
 	//console.log('[+] Started recording \x1b[36mStream {{0}}\x1b[0m to\x1b[31m {{1}}\x1b[0m'.replace('{{0}}',c).replace('{{1}}',filename));
 	
 	proc.stderr.on('data', (data) => {
-                console.log(data.toString())
+        //console.log(data.toString())
 		var regex = /Opening '([\w\-\.]+)' for writing/
 		var match = regex.exec(data);
 		if (match && match.length >=2){
@@ -127,8 +127,8 @@ function interactiveStart(skipConfig) {
 	console.log("********************")
 	console.log("** VM Cloud Stream Recorder")
 	console.log("********************")
-	console.log("** ammar@vmclouds.co.uk")
-	console.log("********************")
+	// console.log("** ammar@vmclouds.co.uk")
+	// console.log("********************")
 	console.log("** To exit at any time, press Ctrl+C.")
 	console.log("********************")
 	
