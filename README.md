@@ -6,14 +6,16 @@ The user is asked to provide a link to a stream, the rotation frequency in minut
 ![Usage Example](cmd.png)
 ![Output Example](explorer.png)
 
-## Dependencies
+
+## Installation 
 
 For the script to run, ffmpeg must be installed and in path. See https://www.ffmpeg.org/download.html for information.
 
-## Usage
-
 	git clone https://github.com/0x41mmarVM/StreamSentinel
 	npm install
+
+## Usage
+
 	node recorder.js
 
 ## Config
